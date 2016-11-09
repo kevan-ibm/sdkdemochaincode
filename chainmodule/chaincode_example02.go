@@ -27,7 +27,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"github.com/kholdaway/fabric/core/chaincode/shim"
+	"github.com/kholdaway/sdkdemofabric/core/chaincode/shim"
 )
 
 // SimpleChaincode example simple Chaincode implementation
