@@ -22,3 +22,11 @@ _testmain.go
 *.exe
 *.test
 *.prof
+
+# NPM Dependencies
+node_modules
+
+# IntelliJ
+.idea
+
+keyValStore-*
