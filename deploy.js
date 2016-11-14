@@ -15,7 +15,7 @@ try {
 // Create a client blockchin.
 var chain = hfc.newChain(config.chainName);
 
-var certPath = __dirname+"/certificate.pem";
+var certPath = __dirname+"/src/"+config.deployRequest.chaincodePath+"/certificate.pem";
 
 // Read and process the credentials.json
 var network;
@@ -48,7 +48,6 @@ function init(){
 	if (isHSBN) {
 		certFile = '0.secure.blockchain.ibm.com.cert';
 	}
-    console.log(certPath);
 	fs.createReadStream(certFile).pipe(fs.createWriteStream(certPath));
 	enrollAndRegisterUsers();
 }
